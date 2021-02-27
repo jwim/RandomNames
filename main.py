@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 database = sqlite3.connect('database.db')
-# database.execute("CREATE TABLE names (first TEXT, last TEXT)")
+database.execute("CREATE TABLE names (first TEXT, last TEXT)")
 
 
 @app.route('/')
